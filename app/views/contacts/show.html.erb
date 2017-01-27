@@ -1,8 +1,13 @@
 <h1>Contact</h1>
 <p>First Name: <%= @contact.first_name %></p>
 <p>Last Name: <%= @contact.last_name %></p>
+<p>Midle Name:<%=@contact.midle_name %></p>
 <p>Email: <%= @contact.email %></p>
+<p>Bio: <%= @contact.bio %></p>
 <p>Phone Number: <%= @contact.phone%></p>
+<p>Created Time: <%= @contact.create_time%></p>
+<p>Updated at: <%= @contact.update_time %></p>
 <a class="btn btn-default" href="/contacts/<%= params[:id] %>/edit" role="button">Edit Contact</a>
 
 <%= button_to "Delete Contact", "/contacts/#{params[:id]}", method: :delete %>
+

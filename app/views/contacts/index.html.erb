@@ -3,15 +3,19 @@
     <tr>
       <th>First Name</th>
       <th>Last Name</th>
+      <th>Midle Name</th>
       <th>Email</th>
       <th>Phone Contact</th>
+      <th>Bio</th>
     </tr>
     <% @contacts.each do |contact| %>
       <tr>
         <td><a href="/contacts/<%= contact.id %>"><%= contact.first_name %></td>
         <td><%= contact.last_name %></td>
+        <td><%= contact.midle_name %></td>
         <td><%= contact.email %></td>
         <td><%= contact.phone %></td>
+        <th><%= contact.bio %></th>
       </tr>
     <% end %>
   </table>
