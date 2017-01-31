@@ -1,19 +1,19 @@
 <div class="container">
- <%= form_tag "/contacts", method: :post do %>
-  <form>
-   <br>First Name:<input type="text" name="first_name" placeholder="Eric"><br>
-   <br>Last Name:<input type="text" name="last_name" placeholder="Muvunyi"><br>
-   <br>Midle Name:<input type="text" name="midle_name" placeholder="Mark"><br>
-   <br>Email:<input type="email" name="email" placeholder=".......@gmail.com"><br>
-   <br>Phone Contact:<input type="text" name="phone" placeholder="078....."><br>
-   <br>Bio:<br>
-      <br><textarea type="text" name="bio" rows="10" cols="30">
-      </textarea><br>
-   <br>Longitude:<input type="float" name="longitude"><br>
-   <br>latitude:<input type="float" name="latitude"><br>
+<%= form_tag "/contacts", method: :post do %>
+<form>
+ <br>First Name:<input type="text" name="first_name" placeholder="Eric"><br>
+ <br>Last Name:<input type="text" name="last_name" placeholder="Muvunyi"><br>
+ <br>Midle Name:<input type="text" name="midle_name" placeholder="Mark"><br>
+ <br>Email:<input type="email" name="email" placeholder=".......@gmail.com"><br>
+ <br>Phone Contact:<input type="text" name="phone" placeholder="078....."><br>
+ <br>Bio:<br>
+    <br><textarea type="text" name="bio" rows="10" cols="30">
+    </textarea><br>
+ <br>Longitude:<input type="float" name="longitude"><br>
+ <br>latitude:<input type="float" name="latitude"><br>
 
-   <br><button type="submit" class="btn btn-default">Submit</button><br>
- </form>
- <% end %>
+ <br><button type="submit" class="btn btn-default">Submit</button><br>
+</form>
+<% end %>
 
 </div>

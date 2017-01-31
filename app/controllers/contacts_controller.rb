@@ -47,4 +47,12 @@ class ContactsController < ApplicationController
     @contact.destroy
     redirect_to "/contacts"
   end
+  def search
+    search_contact = params[:search_query]
+    @contacts = Contact.where("first_name LIKE ? OR last_name LIKE ? OR midle_name LIKE ? OR bio LIKE ?", "%#{search_contact}%" , "%#{search_contact}%" , "%#{search_contact}%", "%#{search_contact}%" )
+    if search_contact.empty?
+      @contacts = Contact.all
+    end 
+    render :index
+  end
 end
